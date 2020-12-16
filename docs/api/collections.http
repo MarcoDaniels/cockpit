@@ -1,0 +1,11 @@
+### fetch schema for {{collection}}
+GET {{baseURL}}/collections/collection/{{collection}}?token={{apiToken}}
+Accept: application/json
+
+### with Moderation addon: fetch all published entries for {{collection}}
+GET {{baseURL}}/collections/get/{{collection}}?token={{apiToken}}
+Accept: application/json
+
+### with Moderation addon: fetch all entries for {{collection}}
+GET {{baseURL}}/collections/get/{{collection}}?token={{apiToken}}&previewToken={{moderationToken}}
+Accept: application/json
