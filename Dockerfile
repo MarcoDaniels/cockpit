@@ -20,6 +20,8 @@ RUN echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
 
 RUN chown -R www-data:www-data /var/www/html
 
+COPY . /var/www/html
+
 VOLUME /var/www/html
 
 CMD ["apache2-foreground"]
